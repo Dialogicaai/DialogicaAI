@@ -2,7 +2,7 @@
   "name": "dialogicaai",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://dialogicaai.github.io/DialogicaAI/",
+  "homepage": "https://dialogicaai.github.io/dialogicaai.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
