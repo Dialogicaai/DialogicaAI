@@ -1,0 +1,68 @@
+.root {
+
+
+}
+
+.logo{
+    height: 4em;
+    width: 4em;
+}
+
+.divLogo{
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    margin-right: 1em;
+    text-decoration-line: none;
+    color: #000000;
+    align-self: baseline;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1em;
+    margin-left: 1em;
+    border-radius: .5em;
+    padding: 0.25em;
+}
+
+.spanClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80em;
+}
+
+.imgNav {
+    padding-right: 2em;
+    margin-right: 20em;
+    display: inline;
+    margin-top: 0em;
+    width: 20em;
+}
+
+.div {
+    display: inline;
+    align-self: center;
+    border-radius: .5em;
+    background-color: #EBEBEB;
+    padding: 0.6em;
+    margin-left: .5em;
+}
+
+.divContent {
+    display: inline-block;
+}
+
+.nameH1 {
+    font-family: "BillionDreams";
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+@font-face {
+    font-family: "BillionDreams";
+    src: local("BillionDreams"),
+        url("../../assets/BillionDreams.ttf") format("truetype");
+    font-weight: bold;
+}

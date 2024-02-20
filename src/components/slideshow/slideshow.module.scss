@@ -1,0 +1,60 @@
+.root {
+    margin-top: 2em;
+    position: relative;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image {
+    flex: 0 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.controlButton {
+    position: absolute;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.previousButton {
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10em;
+    width: 4em;
+    height: 4em;
+}
+
+.nextButton {
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10em;
+    width: 4em;
+    height: 4em;
+}
+
+.previousImage,
+.nextImage {
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.previousImage {
+    left: -100%;
+}
+
+.nextImage {
+    right: -100%;
+}

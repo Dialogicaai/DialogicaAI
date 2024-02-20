@@ -1,0 +1,27 @@
+.root {}
+
+
+.h2 {
+    display: flex;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.paragraph {
+    display: flex;
+    text-align: left;
+    width: 25em;
+    font-size: 2em;
+    color: rgb(87, 87, 87);
+}
+
+
+
+.divParagraph {
+    width: 30em;
+}
+
+.divMain {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}

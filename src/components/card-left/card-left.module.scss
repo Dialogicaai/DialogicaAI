@@ -1,0 +1,32 @@
+.root {}
+
+.divMain {
+    width: 25em;
+    margin-left: 5em;
+}
+
+.divText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.divImage {}
+
+.imgClass {
+    width: 25em;
+    height: 35em;
+}
+
+.h1class{
+ 
+    font-size: 1.25em;
+}
+
+.paragraph{
+   
+    margin-left: .25em;
+    font-size: 1.25em;
+    color: rgb(87, 87, 87);
+}
