@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://dialogicaai.github.io/dialogicaai.github.io",
+  "homepage": "https://dialogicaai.github.io/DialogicaAI/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
