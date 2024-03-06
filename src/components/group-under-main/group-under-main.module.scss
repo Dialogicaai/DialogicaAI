@@ -1,0 +1,103 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto; /* Center the components horizontally */
+  margin-top: 2em;
+}
+
+.divMain {
+  width: 100%; /* Ensure the content spans the full width */
+}
+
+.divLeft {
+  margin-left: 5em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.5em;
+  width: 48%; /* Adjust width to fit within the container */
+}
+
+.divRight {
+  margin-left: 1em;
+  margin-right: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.5em;
+  width: 48%; /* Adjust width to fit within the container */
+}
+
+.divLeft {
+  background-color: #363a95;
+  border: 2px solid transparent;
+}
+
+.divRight {
+  background-color: #dae3fb;
+  border: 2px solid #0048f0;
+}
+
+.divUpper,
+.divLower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgLower {
+  height: 70%; /* Maintain aspect ratio */
+}
+
+.imgLowerTwo {
+  height: 60%; /* Maintain aspect ratio */
+}
+
+.paragraphClass {
+  text-align: center;
+  width: 90%; /* Ensure the text spans the full width */
+  color: #000000;
+  font-size: 1.2em;
+}
+.paragraphClassLeft {
+  text-align: center;
+  width: 90%; /* Ensure the text spans the full width */
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.h2Left {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.h2right {
+  text-align: center;
+  font-size: 2.5em;
+  color: #000000;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .spanMain {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center;
+  }
+
+  .divLeft,
+  .divRight {
+    width: 90%; /* Adjust width to fit within the container */
+    max-width: 100%; /* Remove maximum width limit */
+    margin-bottom: 2em; /* Add margin for better spacing */
+  }
+}

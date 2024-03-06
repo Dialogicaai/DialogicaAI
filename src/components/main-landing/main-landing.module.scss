@@ -1,0 +1,123 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.divMain {
+}
+
+.spanMain {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6em;
+  width: 90em;
+}
+
+.divLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40em;
+}
+
+.divRight {
+}
+
+.aiLogo {
+  width: 4em;
+  height: 2em;
+}
+
+.spanButtons {
+}
+
+.h1ClassBlue {
+  color: #002dff;
+  text-align: start;
+  font-size: 3.4em;
+  margin-right: 0.25em;
+}
+
+.h1ClassBlack {
+  text-align: start;
+  font-size: 3.4em;
+}
+
+.paragraphClass {
+}
+
+.textSpan {
+}
+
+.bluetextspan {
+  text-align: start;
+  display: flex;
+}
+
+.divTextHeders {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 40em;
+}
+.imgClass {
+  width: 45em;
+  color: white;
+}
+.buttonDiscover {
+  border-radius: 1em;
+  background-color: #040101;
+  background-color: #010404;
+  background-color: #010304;
+  background-color: #010204;
+  background-color: #010104;
+  background-color: #010104;
+  background-color: #020104;
+  background-color: #5129a0;
+  background-color: #542aa6;
+  background-color: #552aac;
+  background-color: #5a26bf;
+  background-color: #552aac;
+  background-color: #5a26bf;
+  background-color: #5b20cf;
+  background-color: #5b1ae0;
+  background-color: #5b20cf;
+  background-color: #5b1ae0;
+  background-color: #5c17e6;
+  background-color: #5e14ee;
+  background-color: #5f10f7;
+  background-color: #5b20cf;
+  background-color: #5b1ae0;
+  background-color: #5c17e6;
+  background-color: #5e14ee;
+  background-color: #5f10f7;
+  background-color: #600fff;
+  background-color: #600dff;
+  background-color: #5e14ee;
+  background-color: #5f10f7;
+  background-color: #600fff;
+  background-color: #600dff;
+  background-color: #5d0aff;
+  background-color: #5d0aff;
+  background-color: #5d09ff;
+  background-color: #5c08ff;
+  background-color: #5c08ff;
+  background-color: #5e14ee;
+  background-color: #5f10f7;
+  background-color: #600fff;
+  background-color: #600dff;
+  background-color: #5d0aff;
+  background-color: #5d0aff;
+  background-color: #5d09ff;
+  background-color: #5c08ff;
+  background-color: #5c08ff;
+  color: #ffffff;
+}
+.buttonJoin {
+  border: 0px solid transparent;
+  background-color: transparent;
+  color: #0d00ff;
+  text-decoration-line: underline;
+  padding-left: 0em;
+}

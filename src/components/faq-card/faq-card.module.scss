@@ -1,0 +1,54 @@
+.root {
+ 
+}
+
+.divMain{
+  width: 100%;
+}
+
+.spanService {
+  display: flex;
+  justify-content: center;
+  columns: 2;
+}
+.divService {
+  
+}
+.button {
+  margin: 0em 1em 0em 0em;
+}
+.divText {
+  display: flex;
+  margin-left: 1em;
+}
+.divButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+
+}
+
+.dropdown {
+  display: flex;
+  columns: 2;
+}
+
+.ul {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.desc {
+  font-size: 1.2em;
+  width: 18em;
+ 
+}
+
+.divDesc {
+  display: flex;
+  justify-content: left;
+  
+  margin-left: auto;
+  text-align: left;
+}

@@ -1,0 +1,82 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.divLine{
+  height: 2px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.divMain {
+  padding: .5em;
+  height: 5em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  background-color: #ffffff;
+  display: inline-block;
+  width: 85%;
+  max-width: 100%; /* Optional: keeps the div from stretching too wide on large screens */
+}
+
+.divCenter{
+  display: flex;
+  align-items: center;
+}
+
+.spanMain {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.waitlistButton {
+  background-color: #233cec;
+  color: white;
+  border-radius: 1em;
+  font-size: 1.2em;
+}
+
+
+.buttonLink {
+  background-color: transparent;
+  font-size: 1.2em;
+}
+
+
+.logoClass {
+  margin-right: .5em;
+  width: 3em; /* Consider making this responsive with a % or vw unit if needed */
+  height: 3em; /* Maintain aspect ratio */
+}
+
+.h1Class {
+  font-size: 1.8em; /* Consider using vw or % for scalability */
+}
+
+/* Example Media Query for smaller screens */
+@media (max-width: 768px) {
+  .spanMain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divLeft, .divCenter, .divRight {
+    margin: 0.5em 0; /* Adjust margins for compact layout */
+  }
+
+  .logoClass {
+    width: 10vw; /* Example of using viewport width for scalability */
+  }
+
+  .h1Class {
+    font-size: 4vw; /* Adjust font size based on viewport width */
+  }
+}

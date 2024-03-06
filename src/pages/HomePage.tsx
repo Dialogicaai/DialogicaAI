@@ -1,53 +1,83 @@
-import { HomeIntro } from '../components/home-intro/home-intro';
-import { NavFooter } from '../components/nav-footer/nav-footer';
-import { Line } from '../components/line/line';
-import { Main } from '../components/main/main'
-import { SubIntro } from '../components/sub-intro/sub-intro';
-import { UnderMain } from '../components/under-main/under-main';
-import { HomeSections } from '../components/home-sections/home-sections';
-import { UnderCards } from '../components/under-cards/under-cards';
-import { DoubleCards } from '../components/double-cards/double-cards';
-import { UnderDoubleCards } from '../components/under-double-cards/under-double-cards';
-import { Slideshow } from '../components/slideshow/slideshow';
-import { UnderSlideshow } from '../components/under-slideshow/under-slideshow';
-import { HomeSectionsTwo } from '../components/home-sections-two/home-sections-two';
-import { EndingImages } from '../components/ending-images/ending-images';
+import { useState } from 'react';
+import styles from './HomePage.module.scss';
+import { NavHeaderDialogica } from '../components/nav-header-dialogica/nav-header-dialogica';
+import { GroupUnderMain } from '../components/group-under-main/group-under-main';
+import { ComponentAltRight } from '../components/component-alt-right/component-alt-right';
+import { ComponentAltLeft } from '../components/component-alt-left/component-alt-left';
+import { ComponentAltRightTwo } from '../components/component-alt-right-two/component-alt-right-two';
+import { ComponentAltLeftTwo } from '../components/component-alt-left-two/component-alt-left-two';
+import { MainLandingTwo } from '../components/main-landing-two/main-landing-two';
+import { GroupFinal } from '../components/group-final/group-final';
+import { FAQ } from '../components/faq/faq';
+import { Footer } from '../components/footer/footer';
 
-function HomePage () {
+function HomePage() {
 
-    const cards = [
-        { title: 'Transcription', description: 'Providing Real-Time transcription across multiple languages' },
-        { title: 'Time Track', description: 'Keeping interviews organized and efficient, even with limited time, by using a system that not only tracks time but also prompts you to revisit previous questions if they haven\'t been answered.'},
-        { title: 'Data', description: 'Facilitating the creation of live reference feeds tailored by users through the support of various file types including Word documents, PDFs, spreadsheets, and many others for seamless integration and accessibility.' },
-        { title: 'Integrations', description: 'Compatible with top platforms such as Zoom, Google Meet, and Teams, or can be used independently.' },   
+    const faqs = [
+        {
+            id: 1,
+            title: 'Where is the data Coming From?',
+            description: 'Premium Web Design using all modern technologies including React Typescript.',
+            bulletOne: 'Website design and management',
+            bulletTwo: 'E-Commerce front and back-end support',
+            bulletThree: 'On-call tech support',
+        },
+        {
+            id: 2,
+            title: 'What is the security like?',
+            description: 'Full Service Management following the latest trends and promotions.',
+            bulletOne: 'Data Analytics and Marketing for Paid Advertising',
+            bulletTwo: 'Content Creation including Video',
+            bulletThree: 'Viewer Engaugement',
+        },
+        {
+            id: 3,
+            title: 'Is the system Jusridiction Specific?',
+            description: 'Is the system Jusridiction Specific?',
+            bulletOne: 'Hardware & Software Installation',
+            bulletTwo: 'Web Application Developement',
+            bulletThree: 'On-Call Tech Support',
+        },
+        {
+            id: 4,
+            title: 'Does it follow \'Rules of procedure\'',
+            description: 'Full Service content creation to fit all your busness needs from product design and prototyping, branding, etc',
+            bulletOne: 'Product Design',
+            bulletTwo: 'Business branding & Advertising',
+            bulletThree: 'Photography, videography and content creation',
+        },
+        {
+            id: 5,
+            title: 'Can I turn off ceritan features?',
+            description: 'From data metrics to assisting with Pricing adjustments to maxamize your profits, we have your back!',
+            bulletOne: 'Business Planning and Startup',
+            bulletTwo: 'Employee Compensation Strategies & Business Analytics',
+            bulletThree: 'Competative market pricing',
+        },
+        {
+            id: 6,
+            title: 'How are the Questions Generated?',
+            description: 'We believe Accessibility is key for every website, no matter how small of a business.',
+            bulletOne: 'We strive to adhear to all WCAG 2.1 & 2.2 requiremnts.',
+            bulletTwo: 'Backed by up-to-date UserWay Accessibility widget.',
+            bulletThree: 'We provides Accessibility Statements and website reports.',
+        },
     ];
 
-    const cardsTWO = [
-        { title: 'Projects', description: 'Easily create and manage projects from one place.' },
-        { title: 'Files', description: 'Upload and delete files with esase.' },
-        { title: 'Notifications', description: 'Monitor project progress, such as database completion rendering.' },
-        { title: 'Tools', description: 'Easily manage Datapbases, External API\'s and more.' },   
-    ];
 
-return (
-        <div>
-                <Line />
-                <HomeIntro />
-                <SubIntro />
-                <Main />
-                <UnderMain />
-                <HomeSections cards={cards} />
-                <UnderCards />
-                <DoubleCards />
-                <UnderDoubleCards />
-                <Slideshow />
-                <HomeSectionsTwo cards={cardsTWO} />
-                <UnderSlideshow />
-                <EndingImages />
-                <Line />
-                <NavFooter />
+    return (
+        <div className={styles.App}>
+            <MainLandingTwo />
+            <GroupUnderMain />
+            <ComponentAltRight />
+            <ComponentAltLeft />
+            <ComponentAltRightTwo />
+            <ComponentAltLeftTwo />
+            <GroupFinal />
+            <FAQ  faqs={faqs} />
+            <Footer />
         </div>
-    )
+    );
 }
 
 export default HomePage;

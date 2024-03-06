@@ -1,33 +1,35 @@
 import classNames from 'classnames';
 import styles from './nav-header.module.scss';
-import Logo from '../../assets/noBackground.png'
-
-import { Link } from "react-router-dom";
 
 export interface NavHeaderProps {
     className?: string;
 }
 
+/**
+ * This component was created using Codux's Default new component template.
+ * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
+ */
 export const NavHeader = ({ className }: NavHeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.divContent}>
-                <span className={styles.spanClass}>
-                    <div className={styles.divLogo}>
-                    <Link to="/">
-                    <img className={styles.logo} src={Logo}></img>
-                    </Link>
-                    <h1 className={styles.nameH1}>Dialogica</h1>
+            <div className={styles.divMain}>
+                <span className={styles.spanMain}>
+                    <div className={styles.divLeft}>
+                        <button className={styles.buttonLink}>Home</button>
+                        <button className={styles.buttonLink}>About</button>
+                        <button className={styles.buttonLink}>Uses</button>
                     </div>
-                    <div>
-                    <div className={styles.div}>
-                        <a href="https://eq92ev6usyv.typeform.com/to/WgX0GzXA" className={styles.navLink}>Join Waitlist</a>
+                    <div className={styles.divCenter}>
+                        <img
+                            src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                            alt=""
+                            className={styles.logoClass}
+                        />
+                        <h2 className={styles.h2class}>Dialogica AI</h2>
                     </div>
-                    <div className={styles.div}>
-                    <Link to="/contact">
-                        <a href="/contact" className={styles.navLink}>Contact</a>
-                    </Link>
-                    </div>
+                    <div className={styles.divRight}>
+                        <button className={styles.buttonLink}>Login</button>
+                        <button className={styles.waitlistButton}>Waitlist</button>
                     </div>
                 </span>
             </div>

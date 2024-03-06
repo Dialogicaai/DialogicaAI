@@ -1,0 +1,87 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.divMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divBottom {
+  margin-top: 2em;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text for smaller screens */
+}
+
+.imgClass {
+  max-width: 75%; /* Set maximum width to 80% */
+  width: auto; /* Ensure image scales proportionally */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 1.5em;
+  display: block; /* Ensure image remains centered */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.IntroText {
+  font-weight: 650;
+  font-size: 5.6em; /* Decrease font size for smaller screens */
+  text-align: center; /* Center text for smaller screens */
+}
+
+@media screen and (max-width: 768px) {
+  .IntroText {
+    font-size: 5.5em; /* Set font size to 5.5em for smaller screens */
+  }
+}
+
+.amplifyingColor {
+  color: #1a3df5;
+  padding-right: 0.25em;
+}
+
+.andColor {
+  padding-right: 0.25em;
+}
+
+.elevatingColor {
+  color: #1a3df5;
+  padding-right: 0.25em;
+}
+
+.divFirstText,
+.divSecondText {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure text wraps on smaller screens */
+}
+
+.divSecondText {
+  margin-top: 0.5em;
+}
+
+.paragraph {
+  font-size: 2.25em;
+  max-width: 67%; /* Set maximum width to 80% */
+  width: auto; /* Ensure image scales proportionally */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 1.5em;
+  display: block; /* Ensure image remains centered */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.buttonWaitlist {
+  margin-right: 0.25em;
+  font-size: 1.2em;
+}
+.buttonBeta {
+  margin-left: 0.25em;
+}
+.divButtons {
+  margin-top: 1.5em;
+}
